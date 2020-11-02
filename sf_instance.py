@@ -51,7 +51,7 @@ EXAMPLES = """
     state: present
   register: result
 
-- name: Delete an intance
+- name: Delete an instance
   sf_instance:
     uuid: 'afb68328-6ff0-498f-bdaa-27d3fcc97f31'
     state: absent

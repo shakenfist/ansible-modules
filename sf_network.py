@@ -38,7 +38,7 @@ def present(module):
         if not module.params.get(required):
             return error('You must specify a %s when creating an instance' % required)
 
-    cmd = ('sf-client --json network create %(netblock)s %(name)s'
+    cmd = ('sf-client --json network create %(name)s %(netblock)s'
            % module.params)
     rc, stdout, stderr = module.run_command(
         cmd, check_rc=False, use_unsafe_shell=True)
